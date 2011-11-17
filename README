@@ -1,0 +1,7 @@
+Implémentations en Groovy du "FooBarQix"
+
+Pour le lancer:
+
+  * installer Groovy (si ce n'est déjà fait)
+  * groovy FooBarQix/FooBarQix.groovy
+
