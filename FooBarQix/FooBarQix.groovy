@@ -3,9 +3,10 @@
     pfx += it%5==0?'Bar':''
     pfx += it%7==0?'Qix':''
     
-    res = "$pfx" + "$it".collect { n ->       
+    res = pfx + "$it".collect { n ->       
        (n=='3'?'Foo':n=='5'?'Bar':n=='7'?'Qix':pfx?'':n)
     }.sum()
-    
-    println res
+
+    if (res =~ /[FBQ]/) res = res.replaceAll(/[0-9]/,'')
+    println "$it: $res"
 }
